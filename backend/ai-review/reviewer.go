@@ -54,6 +54,7 @@ func ReviewCode(diff string) AIReview {
 
 	Respond ONLY with raw JSON.
 	Do NOT wrap the JSON in markdown or code blocks.
+	Do NOT include any characters that might cause issue while decoding JSON.
 	Code diff:
 	%s
 	`, diff)
