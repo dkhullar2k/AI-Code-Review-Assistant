@@ -21,18 +21,4 @@ An AI-powered system that automatically reviews GitHub Pull Requests using LLMs.
 
 ## Architecture
 
-GitHub PR
-   ↓
-Webhook Service (Go)
-   ↓
-Redis Queue
-   ↓
-Worker Service (Go)
-   ↓
-AI Review Engine (LLM)
-   ↓
-PostgreSQL Storage
-   ↓
-API Server (Go)
-   ↓
-React Dashboard
+GitHub PR → Webhook Service (Go) → Redis Queue → Worker Service (Go) → AI Review Engine (LLM) → PostgreSQL Storage → API Server (Go) → React Dashboard
